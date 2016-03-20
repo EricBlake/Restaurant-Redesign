@@ -20,6 +20,7 @@ body{
 	background-color: #cccccc;
 }
 
+//*header and navigation begin
 
 .site-header{
 	background-color: #33cc99;
@@ -53,6 +54,9 @@ body{
 		}
 	}
 }
+
+//*HOME PAGE STYLING*//
+
 .our_story{
 	margin: 0 auto;
 	width: 100%;
@@ -88,7 +92,7 @@ footer{
 }
 
 
-//**Menu CSS Styling**//
+//**MENU CSS Styling**//
 
 .breakfast{
 	box-sizing: border-box;
@@ -120,8 +124,22 @@ footer{
 	}
 }
 
+//*BREAKFAST TACOS*//
+
 .breakfast_tacos{
 	clear:both;
+	text-align: center;
+	width: 100%;
+	margin: 0 auto;
+
+	ul{
+		list-style: none;
+		text-align: center;
+
+		li{
+			display: inline-block;
+		}
+	}
 }
 
 
@@ -129,9 +147,68 @@ footer{
 	text-align: center;
 }
 
+.lunch{
+	box-sizing: border-box;
+	margin: 1em;
+	
 
 
+	.botanas_items1{
+		margin: 0 auto;
+		box-sizing: border-box;
+		width: 50%;
+		float: left;
+		
+		a{
+			color: #990000;
+			margin-bottom: 0;
+			width: 50%;
+		}
+	}
+	.botanas_items2{
+		margin: 0 auto;
+		box-sizing: border-box;
+		width: 50%;
+		float: left;
+		a{
+			color: #990000;
+			margin-bottom: 0;
+			width: 50%;
+		}
+	}
 
+	//ENCHILALDAS STYLE//
+
+	.enchiladas{
+		clear:both;
+		margin: 0 auto;
+		width: 100%;
+
+		.enchiladas1{
+		margin: 0 auto;
+		box-sizing: border-box;
+		width: 50%;
+		float: left;
+		
+		a{
+			color: #990000;
+			margin-bottom: 0;
+			width: 50%;
+		}
+	}
+		.enchiladas2{
+			margin: 0 auto;
+			box-sizing: border-box;
+			width: 50%;
+			float: left;
+			a{
+				color: #990000;
+				margin-bottom: 0;
+				width: 50%;
+			}
+		}
+	}
+}
 
 
 
