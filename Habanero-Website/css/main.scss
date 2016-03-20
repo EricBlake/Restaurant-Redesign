@@ -16,9 +16,13 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
   }
 }
 
+body{
+	background-color: #cccccc;
+}
+
+
 .site-header{
 	background-color: #33cc99;
-	font-family: helvetica;
 	text-align: center;
 }
 
@@ -79,6 +83,57 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 }
 
 footer{
-	background-color: #bada55;
+	background-color: #33cc99;
 	clear: both;
 }
+
+
+//**Menu CSS Styling**//
+
+.breakfast{
+	box-sizing: border-box;
+	border: 1px solid #000000;
+	margin: 1em;
+}
+
+.breakfast_items1{
+	margin: 0 auto;
+	box-sizing: border-box;
+	width: 45%;
+	float: left;
+	
+	a{
+		color: #990000;
+		margin-bottom: 0;
+		width: 50%;
+	}
+}
+.breakfast_items2{
+	margin: 0 auto;
+	box-sizing: border-box;
+	width: 50%;
+	float: left;
+	a{
+		color: #990000;
+		margin-bottom: 0;
+		width: 50%;
+	}
+}
+
+.breakfast_tacos{
+	clear:both;
+}
+
+
+.section_titles{
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
