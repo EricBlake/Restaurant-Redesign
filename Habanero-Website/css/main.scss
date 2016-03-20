@@ -28,16 +28,19 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 	.nav_list{
 		ul{
 			list-style: none;
+			text-align: center;
 			
 
 			li{
 				display: inline-block;
+
 				
 
 				a{
 					text-decoration: none;
 					color: #ffffff;
 					padding: 2em;
+
 
 					
 				}
@@ -48,13 +51,14 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 }
 .our_story{
 	margin: 0 auto;
+	width: 100%;
+	box-sizing: border-box;
 	.our_story_text{
-		max-width: 40%;
+		width: 40%;
 		float: left;
 	}
 	.amazing_texmex{
-		height: 10em;
-		max-width: 54%;
+		width: 60%;
 		float: left;
 		background-image: url("http://cdn-image.foodandwine.com/sites/default/files/original-201305-HD-modern-mexican-restaurants-bandolero.jpg");
 	}
@@ -63,9 +67,14 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 .section_2{
 	clear: both;
 
+	.location{
+		float: left;
+	}
+
 	.map{
 		background-image: url("http://habanerocafe.com/images/map.gif");
 		height: 10em;
+		float: left;
 	}
 }
 

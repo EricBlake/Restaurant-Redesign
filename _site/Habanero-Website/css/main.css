@@ -1,5 +1,37 @@
 .site-header {
-  background-color: #bada55; }
+  background-color: #33cc99;
+  font-family: helvetica;
+  text-align: center; }
+
+.navigation {
+  background-color: #000;
+  margin: 0 auto; }
+  .navigation .nav_list ul {
+    list-style: none; }
+    .navigation .nav_list ul li {
+      display: inline-block; }
+      .navigation .nav_list ul li a {
+        text-decoration: none;
+        color: #ffffff;
+        padding: 2em; }
+
+.our_story {
+  margin: 0 auto; }
+  .our_story .our_story_text {
+    width: 40%;
+    float: left; }
+  .our_story .amazing_texmex {
+    height: 10em;
+    width: 60%;
+    float: left;
+    background-image: url("http://cdn-image.foodandwine.com/sites/default/files/original-201305-HD-modern-mexican-restaurants-bandolero.jpg"); }
+
+.section_2 {
+  clear: both; }
+  .section_2 .map {
+    background-image: url("http://habanerocafe.com/images/map.gif");
+    height: 10em; }
 
 footer {
-  background-color: #bada55; }
+  background-color: #bada55;
+  clear: both; }
