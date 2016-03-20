@@ -1,0 +1,75 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+$tot-width: 100%;
+$num-col: 12;
+$gut-width: 3%;
+
+$ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
+
+@mixin grid($bleezy){
+  width: ($bleezy * $ind-col-width) + ($gut-width * ($bleezy - 1));
+  float: left;
+  margin-right: $gut-width;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.site-header{
+	background-color: #33cc99;
+	font-family: helvetica;
+	text-align: center;
+}
+
+.navigation{
+	background-color: #000;
+	margin: 0 auto;
+	.nav_list{
+		ul{
+			list-style: none;
+			
+
+			li{
+				display: inline-block;
+				
+
+				a{
+					text-decoration: none;
+					color: #ffffff;
+					padding: 2em;
+
+					
+				}
+
+			}
+		}
+	}
+}
+.our_story{
+	margin: 0 auto;
+	.our_story_text{
+		max-width: 40%;
+		float: left;
+	}
+	.amazing_texmex{
+		height: 10em;
+		max-width: 54%;
+		float: left;
+		background-image: url("http://cdn-image.foodandwine.com/sites/default/files/original-201305-HD-modern-mexican-restaurants-bandolero.jpg");
+	}
+}
+
+.section_2{
+	clear: both;
+
+	.map{
+		background-image: url("http://habanerocafe.com/images/map.gif");
+		height: 10em;
+	}
+}
+
+footer{
+	background-color: #bada55;
+	clear: both;
+}
