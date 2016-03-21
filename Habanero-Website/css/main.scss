@@ -17,7 +17,9 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 }
 
 body{
-	background-color: #ffffcc;
+	background-image: url("background.jpg");
+	background-size:cover;
+	background-repeat: no-repeat;
 
 }
 
