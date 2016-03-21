@@ -17,19 +17,28 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 }
 
 body{
-	background-color: #cccccc;
+	background-color: #ffffcc;
+
 }
 
-//*header and navigation begin
+//*header and navigation begin*//
 
 .site-header{
 	background-color: #33cc99;
 	text-align: center;
+	font-family: 'Ribeye', cursive;
+	margin: 0 auto;
+	color: #ffff66;
+	overflow: hidden;
+	font-size: 2em;
+
+
 }
 
 .navigation{
-	background-color: #000;
+	background-color: #9933cc;
 	margin: 0 auto;
+	padding: 1em;
 	.nav_list{
 		ul{
 			list-style: none;
@@ -55,40 +64,86 @@ body{
 	}
 }
 
-//*HOME PAGE STYLING*//
 
-.our_story{
-	margin: 0 auto;
-	width: 100%;
-	box-sizing: border-box;
-	.our_story_text{
-		width: 40%;
-		float: left;
-	}
-	.amazing_texmex{
-		width: 60%;
-		float: left;
-		background-image: url("http://cdn-image.foodandwine.com/sites/default/files/original-201305-HD-modern-mexican-restaurants-bandolero.jpg");
-	}
-}
-
-.section_2{
-	clear: both;
-
-	.location{
-		float: left;
-	}
-
-	.map{
-		background-image: url("http://habanerocafe.com/images/map.gif");
-		height: 10em;
-		float: left;
-	}
-}
+//*FOOTER BEGIN*//
 
 footer{
 	background-color: #33cc99;
 	clear: both;
+	overflow: hidden;
+	max-width: 1000px;
+	margin: 0 auto;
+	
+	
+	
+	.hours{
+		float:left;
+		text-align:center;
+		padding-left: 5em;
+		}
+}
+	.location{
+		float:right;
+		padding-right: 5em;
+	}
+
+
+//*FOOTER END*//
+
+//*HOME PAGE STYLING*//
+
+.our_story{
+	margin: 0 auto;
+	box-sizing: border-box;
+	max-width: 1000px;
+	
+	
+	.our_story_text{
+		width: 40%;
+		float:left;
+
+	}
+}
+	.amazing_texmex{
+		width: 50%;
+		float:left;
+		height: 10em;
+		background-image: url("http://cdn-image.foodandwine.com/sites/default/files/original-201305-HD-modern-mexican-restaurants-bandolero.jpg");
+		padding: 3em;
+		margin-top: 2em;
+		background-repeat: no-repeat;
+		background-size:cover;
+		color: #ffffff;
+
+}
+
+.section_2{
+	clear: both;
+	max-width: 1000px;
+	margin: 0 auto;
+	overflow: hidden;
+
+	.location{
+		float:left;
+		width: 50%;
+	}
+
+	.map{
+		background-image: url("http://habanerocafe.com/images/map.gif");
+		height: 20em;
+		float:left;
+		width: 40%;
+		background-size:cover;
+		background-repeat:no-repeat;
+
+
+		
+	}
+}
+
+.catering{
+	clear: both;
+	text-align: center;
 }
 
 
@@ -98,6 +153,7 @@ footer{
 	box-sizing: border-box;
 	border: 1px solid #000000;
 	margin: 1em;
+	overflow: hidden;
 }
 
 .breakfast_items1{
