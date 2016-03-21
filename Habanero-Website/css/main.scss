@@ -24,13 +24,16 @@ body{
 //*header and navigation begin*//
 
 .site-header{
+
+	.main_title{
 	background-color: #33cc99;
 	text-align: center;
 	font-family: 'Ribeye', cursive;
-	margin: 0 auto;
 	color: #ffff66;
 	overflow: hidden;
 	font-size: 2em;
+	margin-bottom: 0em;
+}
 
 
 }
@@ -54,6 +57,8 @@ body{
 					text-decoration: none;
 					color: #ffffff;
 					padding: 2em;
+					font-size: 20px;
+					
 
 
 					
@@ -71,8 +76,7 @@ footer{
 	background-color: #33cc99;
 	clear: both;
 	overflow: hidden;
-	max-width: 1000px;
-	margin: 0 auto;
+	margin: 1em;
 	
 	
 	
@@ -145,15 +149,16 @@ footer{
 	clear: both;
 	text-align: center;
 }
-
+//**HOMEPAGE STYLING END//
 
 //**MENU CSS Styling**//
 
 .breakfast{
 	box-sizing: border-box;
-	border: 1px solid #000000;
 	margin: 1em;
 	overflow: hidden;
+	margin: 0 auto;
+	max-width: 1000px;
 }
 
 .breakfast_items1{
@@ -161,11 +166,13 @@ footer{
 	box-sizing: border-box;
 	width: 45%;
 	float: left;
+	margin-right: 5%;
 	
 	a{
 		color: #990000;
 		margin-bottom: 0;
 		width: 50%;
+		font-weight: bold;
 	}
 }
 .breakfast_items2{
@@ -177,6 +184,7 @@ footer{
 		color: #990000;
 		margin-bottom: 0;
 		width: 50%;
+		font-weight: bold;
 	}
 }
 
@@ -185,7 +193,7 @@ footer{
 .breakfast_tacos{
 	clear:both;
 	text-align: center;
-	width: 100%;
+	max-width: 1000px;
 	margin: 0 auto;
 
 	ul{
@@ -206,19 +214,23 @@ footer{
 .lunch{
 	box-sizing: border-box;
 	margin: 1em;
+	max-width: 1000px;
+	margin: 0 auto;
 	
 
 
 	.botanas_items1{
 		margin: 0 auto;
 		box-sizing: border-box;
-		width: 50%;
+		width: 45%;
 		float: left;
+		margin-right: 5%;
 		
 		a{
 			color: #990000;
 			margin-bottom: 0;
 			width: 50%;
+			font-weight: bold;
 		}
 	}
 	.botanas_items2{
@@ -230,6 +242,7 @@ footer{
 			color: #990000;
 			margin-bottom: 0;
 			width: 50%;
+			font-weight: bold;
 		}
 	}
 
@@ -238,33 +251,74 @@ footer{
 	.enchiladas{
 		clear:both;
 		margin: 0 auto;
-		width: 100%;
 
 		.enchiladas1{
 		margin: 0 auto;
 		box-sizing: border-box;
-		width: 50%;
-		float: left;
+		width:45%;
+		float:left;
+		margin-right:5%;
 		
 		a{
 			color: #990000;
 			margin-bottom: 0;
 			width: 50%;
+			font-weight: bold;
+		}
+	
+		
 		}
 	}
-		.enchiladas2{
+}
+
+.enchiladas2{
 			margin: 0 auto;
 			box-sizing: border-box;
-			width: 50%;
-			float: left;
+			width:50%;
+			float:left;
 			a{
 				color: #990000;
 				margin-bottom: 0;
 				width: 50%;
+				font-weight: bold;
 			}
-		}
+
+}
+
+.soups{
+	clear:both;
+	margin: 0 auto;
+	max-width: 50%;
+
+	a{
+		color: #990000;
 	}
 }
+
+
+
+
+
+
+
+
+
+//MEDIA QUIRIEY 1//
+
+@media (min-width: 650px){
+  .col {
+    margin-bottom: 0;
+  }
+ 
+  
+}
+
+
+
+
+
+
+
 
 
 
