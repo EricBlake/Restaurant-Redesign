@@ -17,7 +17,7 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 }
 
 body{
-	background-image: url("background.jpg");
+	background-image: url("https://github.com/EricBlake/Restaurant-Redesign/blob/master/Habanero-Website/background.jpg?raw=true");
 	background-size:cover;
 	background-repeat: no-repeat;
 
@@ -33,18 +33,25 @@ body{
 	font-family: 'Ribeye', cursive;
 	color: #ffff66;
 	overflow: hidden;
-	font-size: 2em;
+	font-size: 2.5em;
 	margin-bottom: 0em;
-}
+	margin: 0 auto;
 
+	h2{
+		margin-top:0em;	
+	}
+
+}
 
 }
 
 .navigation{
 	background-color: #9933cc;
 	margin: 0 auto;
-	padding: 1em;
+	padding: .1em;
+
 	.nav_list{
+
 		ul{
 			list-style: none;
 			text-align: center;
@@ -53,14 +60,17 @@ body{
 			li{
 				display: inline-block;
 
-				
+				.button:hover {color: #ffff66; }
 
-				a{
+				.button{
 					text-decoration: none;
 					color: #ffffff;
 					padding: 2em;
-					font-size: 20px;
+					font-size: 1.7em;
+					font-family: 'Merriweather Sans', sans-serif;
+					font-weight: 700;
 					
+			
 
 
 					
@@ -78,19 +88,33 @@ footer{
 	background-color: #33cc99;
 	clear: both;
 	overflow: hidden;
-	margin: 1em;
+	color: #ffffff;
+	margin-top: 2em;
 	
-	
+
 	
 	.hours{
 		float:left;
 		text-align:center;
 		padding-left: 5em;
+		font-size: 1em;
+
+		h1{
+		font-size: 1.6em;
+		color: #ffffff;
+		}
+
 		}
 }
 	.location{
 		float:right;
 		padding-right: 5em;
+		font-size: 1em;
+
+		h1{
+		font-size: 1.6em;
+		color: #ffffff;
+		}
 	}
 
 
@@ -100,19 +124,20 @@ footer{
 
 .our_story{
 	margin: 0 auto;
-	box-sizing: border-box;
-	max-width: 1000px;
+	
+	
 	
 	
 	.our_story_text{
-		width: 40%;
-		float:left;
+
+		h1{
+			color:#4D4D4D;
+		}
+
 
 	}
 }
 	.amazing_texmex{
-		width: 50%;
-		float:left;
 		height: 10em;
 		background-image: url("http://cdn-image.foodandwine.com/sites/default/files/original-201305-HD-modern-mexican-restaurants-bandolero.jpg");
 		padding: 3em;
@@ -125,35 +150,81 @@ footer{
 
 .section_2{
 	clear: both;
-	max-width: 1000px;
+	
 	margin: 0 auto;
 	overflow: hidden;
+	padding-top: 2em;
+	
+	border-color: #272822;
+
 
 	.location{
-		float:left;
-		width: 50%;
+		
 	}
 
 	.map{
-		background-image: url("http://habanerocafe.com/images/map.gif");
-		height: 20em;
-		float:left;
-		width: 40%;
-		background-size:cover;
-		background-repeat:no-repeat;
+		
+		
+		background-size:contain;
+		background-repeat: no-repeat;
+
+		img{
+			max-width: 100%;
+		}
 
 
 		
 	}
 }
+.section_3{
 
-.catering{
-	clear: both;
-	text-align: center;
+	margin:0 auto;
+	
+
+
+	.catering_pic{
+		
+		background-size:contain;
+		background-repeat: no-repeat;
+	
+
+		img{
+			max-width: 100%;
+		}
+	}
+
+	.catering{
+		
+		margin-left: 0 auto;
+
+
+
+	}
 }
 //**HOMEPAGE STYLING END//
 
 //**MENU CSS Styling**//
+
+
+.page_menu{
+	text-align: center;
+	font-size: 32px;
+}
+
+.breakfast{
+
+	.breakfast_label{
+
+		h1{
+			text-align: center;
+
+		}
+		h2{
+			text-align: center;
+			padding-bottom: 2em;
+		}
+	}
+}
 
 .breakfast{
 	box-sizing: border-box;
@@ -161,42 +232,257 @@ footer{
 	overflow: hidden;
 	margin: 0 auto;
 	max-width: 1000px;
+	border-box: 1em solid #272822;
+
+	.section_titles1{
+		text-align: center;
+	}
+
+	.menu_labels{
+			font-size: 1.375em;
+			font-family: 'Merriweather Sans', sans-serif;
+		}
+
 }
 
-.breakfast_items1{
+.column_left{
 	margin: 0 auto;
 	box-sizing: border-box;
-	width: 45%;
-	float: left;
-	margin-right: 5%;
 	
 	a{
 		color: #990000;
 		margin-bottom: 0;
-		width: 50%;
 		font-weight: bold;
 	}
 }
-.breakfast_items2{
+.column_right{
 	margin: 0 auto;
 	box-sizing: border-box;
-	width: 50%;
-	float: left;
+	
 	a{
 		color: #990000;
 		margin-bottom: 0;
-		width: 50%;
 		font-weight: bold;
+		padding-bottom: 1em;
 	}
 }
 
 //*BREAKFAST TACOS*//
 
-.breakfast_tacos{
-	clear:both;
+.tacos{
+	
 	text-align: center;
+	margin: 0 auto;
+	padding-top: 3em;
+
+	ul{
+		list-style: none;
+		text-align: center;
+
+		
+		}
+	}
+
+
+
+
+
+.lunch{
+	box-sizing: border-box;
+	margin: 1em;
 	max-width: 1000px;
 	margin: 0 auto;
+	padding-top: 3em;
+
+		.row{
+			overflow: hidden;
+		
+		.clear{
+			clear:both;
+		}
+	
+			.section_titles1{
+						padding: 1em;
+						text-align: center;
+					}
+
+				.menu_labels{
+					font-size: 1.375em;
+					font-family: 'Merriweather Sans', sans-serif;
+				}
+
+			.section_titles3{
+				padding-top: 1em;
+				text-align:left;
+				overflow: hidden;
+				width: 30%;
+
+				}
+	
+
+	//ENCHILALDAS STYLE//
+
+
+
+				.column_left{
+				margin: 0 auto;
+				box-sizing: border-box;
+				
+				float:left;
+				
+				
+					a{
+						color: #990000;
+						margin-bottom: 0;
+						
+						font-weight: bold;
+					}
+
+					p{
+						margin-top:.5em;
+						padding-bottom: .5em;
+
+					}
+			
+				
+				}
+	
+
+
+			.column_right{
+						margin: 0 auto;
+						box-sizing: border-box;
+						
+						float:left;
+						a{
+							color: #990000;
+							margin-bottom: 0;
+							
+							font-weight: bold;
+
+						}
+						p{
+						margin-top:.5em;
+						padding-bottom: .5em;
+
+					}
+
+				}
+	}
+}
+.soups{
+	
+	margin: 0 auto;
+	
+
+	a{
+		color: #990000;
+	}
+	p{
+				margin-top:.5em;
+				padding-bottom: .5em;
+
+			}
+}
+
+.caldos{
+	text-align: center;
+
+	h1{
+		text-align: center;
+	}
+}
+
+
+@media (min-width: 550px){
+  
+  .main_title{
+  	width: 100%;
+  	margin: 0 auto;
+
+  }
+
+	.row{
+		margin: 0 auto;
+		max-width: 999px;
+	}
+
+	.breakfast{
+		.column_left{
+		margin: 0 auto;
+		box-sizing: border-box;
+		width: 45%;
+		float:left;
+		margin-right: 5%;
+		
+		a{
+			color: #990000;
+			margin-bottom: 0;
+			width: 50%;
+			font-weight: bold;
+		}
+	}
+
+		.column_right{
+	margin: 0 auto;
+	box-sizing: border-box;
+	width: 50%;
+	float:left;
+	a{
+		color: #990000;
+		margin-bottom: 0;
+		width: 50%;
+		font-weight: bold;
+		padding-bottom: 1em;
+		}
+	}
+
+
+
+	}
+
+	.lunch{
+
+		.column_left{
+				margin: 0 auto;
+				box-sizing: border-box;
+				width: 45%;
+				float:left;
+				margin-right: 5%;
+				
+				a{
+					color: #990000;
+					margin-bottom: 0;
+					width: 50%;
+					font-weight: bold;
+				}
+			}
+
+				.column_right{
+			margin: 0 auto;
+			box-sizing: border-box;
+			width: 50%;
+			float:left;
+			a{
+				color: #990000;
+				margin-bottom: 0;
+				width: 50%;
+				font-weight: bold;
+				padding-bottom: 1em;
+				}
+	}
+
+	}
+
+	.soups{
+		clear: both;
+	}
+
+	.tacos{
+	clear:both;
+	text-align: center;
+	margin: 0 auto;
+	padding-top: 3em;
 
 	ul{
 		list-style: none;
@@ -207,115 +493,97 @@ footer{
 		}
 	}
 }
-
-
-.section_titles{
-	text-align: center;
-}
-
-.lunch{
-	box-sizing: border-box;
-	margin: 1em;
-	max-width: 1000px;
+.caldos{
+	max-width: 100%;
 	margin: 0 auto;
-	
-
-
-	.botanas_items1{
-		margin: 0 auto;
-		box-sizing: border-box;
-		width: 45%;
-		float: left;
-		margin-right: 5%;
-		
-		a{
-			color: #990000;
-			margin-bottom: 0;
-			width: 50%;
-			font-weight: bold;
-		}
-	}
-	.botanas_items2{
-		margin: 0 auto;
-		box-sizing: border-box;
-		width: 50%;
-		float: left;
-		a{
-			color: #990000;
-			margin-bottom: 0;
-			width: 50%;
-			font-weight: bold;
-		}
-	}
-
-	//ENCHILALDAS STYLE//
-
-	.enchiladas{
-		clear:both;
-		margin: 0 auto;
-
-		.enchiladas1{
-		margin: 0 auto;
-		box-sizing: border-box;
-		width:45%;
-		float:left;
-		margin-right:5%;
-		
-		a{
-			color: #990000;
-			margin-bottom: 0;
-			width: 50%;
-			font-weight: bold;
-		}
-	
-		
-		}
-	}
 }
 
-.enchiladas2{
-			margin: 0 auto;
-			box-sizing: border-box;
-			width:50%;
-			float:left;
-			a{
-				color: #990000;
-				margin-bottom: 0;
-				width: 50%;
-				font-weight: bold;
+.our_story_text{
+		width: 35%;
+		float:left;
+		padding-left: 2%;
+		box-sizing: border-box;
+
+	}
+	.amazing_texmex{
+		width: 50%;
+		float:right;
+	}
+
+.section_2{
+	clear: both;
+	border-box: 5px;
+	margin: 0 auto;
+
+
+	.location{
+		float:left;
+		width: 35%;
+
+	}
+	.map{
+		
+		float:left;
+		width: 55%;
+	}
+
+}
+
+.section_3{
+	clear: both;
+	max-width: 999px;
+	margin:0 auto;
+	overflow: hidden;
+	padding-top: 3em;
+	box-sizing: border-box;
+
+		.catering_pic{
+				float:left;
+				background-size:contain;
+				background-repeat: no-repeat;
+				width:50%;
+
+				img{
+					max-width: 100%;
+				}
 			}
 
-}
+			.catering{
+				float:right;
+				width: 35%;
+				margin-left: 5%;
+				}
 
-.soups{
-	clear:both;
-	margin: 0 auto;
-	max-width: 50%;
 
-	a{
-		color: #990000;
 	}
+
+	
+
+
+
 }
 
 
 
 
+@media (min-width: 1000px){
 
 
+	
+	header{
+		max-width: 90%;
+		margin: 0 auto;
+	}
 
+	.row{
+		max-width: 70%
+	}
+	footer{
+		max-width: 90%;
+		margin: 0 auto;
+	}
 
-
-//MEDIA QUIRIEY 1//
-
-@media (min-width: 650px){
-  .col {
-    margin-bottom: 0;
-  }
- 
-  
 }
-
-
 
 
 
