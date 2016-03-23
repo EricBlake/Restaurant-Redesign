@@ -129,7 +129,7 @@ footer{
 	.our_story_text{
 
 		h1{
-			color:#4D4D4D;
+			
 		}
 
 
@@ -219,6 +219,7 @@ footer{
 			padding-bottom: 2em;
 			margin-top: -0.5em;
 			font-size: .8em;
+
 		}
 	}
 }
@@ -232,6 +233,7 @@ footer{
 	.section_titles1{
 		text-align: center;
 		margin: 0 auto;
+		margin-bottom: 2em;
 	}
 
 	.menu_labels{
@@ -244,6 +246,7 @@ footer{
 .column_left{
 	margin: 0 auto;
 	box-sizing: border-box;
+	padding-left: 1em;
 	
 	a{
 		color: #003366;
@@ -382,6 +385,9 @@ footer{
 	p{
 	margin-top:.5em;
 	padding-bottom: .5em;
+	text-align: left;
+	max-width: 50%;
+	margin: 0 auto;
 
 	}		
 }
@@ -400,6 +406,8 @@ margin: 0 auto;
 	p{
 	margin-top:.5em;
 	padding-bottom: .5em;
+	max-width: 50%;
+	margin: 0 auto;
 
 	}	
 
