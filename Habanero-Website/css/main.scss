@@ -3,13 +3,13 @@
 ---
 $tot-width: 100%;
 $num-col: 12;
-$gut-width: 3%;
+$gut-width: 5%;
 
 $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 
 @mixin grid($bleezy){
   width: ($bleezy * $ind-col-width) + ($gut-width * ($bleezy - 1));
-  float: left;
+  float:left;
   margin-right: $gut-width;
   &:last-child {
     margin-right: 0;
@@ -18,8 +18,6 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 
 body{
 	background-color: #ffffff;
-	background-size:cover;
-	background-repeat: no-repeat;
 
 }
 
@@ -49,6 +47,8 @@ body{
 	background-color: #9933cc;
 	margin: 0 auto;
 	padding: .1em;
+	border-top: 3px solid #ff0000;
+	border-bottom: 3px solid #ff0000;
 
 	.nav_list{
 
@@ -87,28 +87,27 @@ body{
 footer{
 	background-color: #33cc99;
 	clear: both;
-	overflow: hidden;
-	color: #ffffff;
+	color: #9933cc;
 	margin-top: 2em;
+	border-top: 3px solid #ff0000;
 	
 
 	
 	.hours{
-		float:left;
+		
 		text-align:center;
-		padding-left: 5em;
 		font-size: 1em;
 
 		h1{
 		font-size: 1.6em;
-		color: #ffffff;
+		color: #9933cc;
 		}
 
 		}
 }
 	.location{
-		float:right;
-		padding-right: 5em;
+		text-align:center;
+		margin: 0 auto;
 		font-size: 1em;
 
 		h1{
@@ -149,11 +148,10 @@ footer{
 
 .section_2{
 	clear: both;
-	
 	margin: 0 auto;
 	overflow: hidden;
 	padding-top: 2em;
-	
+	background-color:#E3D7D7;
 	border-color: #272822;
 
 
@@ -162,7 +160,6 @@ footer{
 	}
 
 	.map{
-		
 		
 		background-size:contain;
 		background-repeat: no-repeat;
@@ -175,9 +172,7 @@ footer{
 		
 	}
 }
-.section_3{
 
-	margin:0 auto;
 	
 
 
@@ -193,16 +188,16 @@ footer{
 	}
 
 	.catering{
-		
 		margin-left: 1em;
+		}
+
+
+//**-----------------------HOMEPAGE STYLING END---------------------------------//
 
 
 
-	}
-}
-//**HOMEPAGE STYLING END//
+//**-------------------------MENU CSS Styling-----------------------------------**//
 
-//**MENU CSS Styling**//
 
 
 .page_menu{
@@ -211,6 +206,7 @@ footer{
 }
 
 .breakfast{
+	background-color:#E3D7D7;
 
 	.breakfast_label{
 
@@ -221,20 +217,21 @@ footer{
 		h2{
 			text-align: center;
 			padding-bottom: 2em;
+			margin-top: -0.5em;
+			font-size: .8em;
 		}
 	}
 }
 
 .breakfast{
-	box-sizing: border-box;
 	margin: 1em;
 	overflow: hidden;
 	margin: 1em;
-	max-width: 1000px;
 	border-box: 1em solid #272822;
 
 	.section_titles1{
 		text-align: center;
+		margin: 0 auto;
 	}
 
 	.menu_labels{
@@ -249,7 +246,7 @@ footer{
 	box-sizing: border-box;
 	
 	a{
-		color: #990000;
+		color: #003366;
 		margin-bottom: 0;
 		font-weight: bold;
 	}
@@ -259,7 +256,7 @@ footer{
 	box-sizing: border-box;
 	
 	a{
-		color: #990000;
+		color: #003366;
 		margin-bottom: 0;
 		font-weight: bold;
 		padding-bottom: 1em;
@@ -303,6 +300,7 @@ footer{
 			.section_titles1{
 						padding: 1em;
 						text-align: center;
+						margin: 0 auto;
 					}
 
 				.menu_labels{
@@ -315,6 +313,7 @@ footer{
 				text-align:left;
 				overflow: hidden;
 				width: 30%;
+				padding-bottom: 1em;
 
 				}
 	
@@ -331,7 +330,7 @@ footer{
 				
 				
 					a{
-						color: #0099cc;
+						color: #003366;
 						margin-bottom: 0;
 						
 						font-weight: bold;
@@ -354,7 +353,7 @@ footer{
 						
 						float:left;
 						a{
-							color: #0099cc;
+							color: #003366;
 							margin-bottom: 0;
 							
 							font-weight: bold;
@@ -375,82 +374,116 @@ footer{
 	
 
 	a{
-		color: #0099cc;
+	color: #003366;
+	margin-bottom: 0;
+	font-weight: bold;
 	}
-	p{
-				margin-top:.5em;
-				padding-bottom: .5em;
 
-			}
+	p{
+	margin-top:.5em;
+	padding-bottom: .5em;
+
+	}		
+}
+
+.dessert{
+
+margin: 0 auto;
+	
+
+	a{
+	color: #003366;
+	margin-bottom: 0;
+	font-weight: bold;
+	}
+
+	p{
+	margin-top:.5em;
+	padding-bottom: .5em;
+
+	}	
+
+
 }
 
 .caldos{
 	text-align: center;
+	
+	max-width: 100%;
 
 	h1{
 		text-align: center;
+		margin: 0 auto;
+		max-width: 100%;
 	}
 }
 
 
+//-------------------------------BREAKPOINT 1------------------------------------//
+
 @media (min-width: 550px){
+
+
+	
   
   .main_title{
   	width: 100%;
   	margin: 0 auto;
 
   }
+	.footer{
+	overflow: hidden;
 
+				.hours{
+					float:left;
+					text-align:center;
+					padding-left: 10em;
+					font-size: 1em;
+
+					h1{
+					font-size: 1.6em;
+					color: #ffffff;
+					}
+
+					}
+
+				.location{
+					float:right;
+					padding-right: 10em;
+					font-size: 1em;
+					margin: 0 auto;
+
+					h1{
+					font-size: 1.6em;
+					}
+				}
+				}
+			
 	.row{
 		margin: 0 auto;
-		max-width: 999px;
+		box-sizing: border-box;
+		
 	}
 
 	.breakfast{
-		.column_left{
-		margin: 0 auto;
-		box-sizing: border-box;
-		width: 45%;
-		float:left;
-		margin-right: 5%;
-		
-		a{
-			color: #0099cc;
-			margin-bottom: 0;
-			width: 50%;
-			font-weight: bold;
-		}
-	}
-
-		.column_right{
-	margin: 0 auto;
-	box-sizing: border-box;
-	width: 50%;
-	float:left;
-	a{
-		color: #0099cc;
-		margin-bottom: 0;
-		width: 50%;
-		font-weight: bold;
 		padding-bottom: 1em;
+
+		h1{
+			text-align: center;
 		}
-	}
-
-
-
-	}
-
-	.lunch{
+		h2{
+			text-align: center;
+			margin: 0 auto;
+		}
 
 		.column_left{
 				margin: 0 auto;
-				box-sizing: border-box;
 				width: 45%;
 				float:left;
 				margin-right: 5%;
 				
 				a{
-					color: #0099cc;
+					color: #003366;
 					margin-bottom: 0;
 					width: 50%;
 					font-weight: bold;
@@ -459,23 +492,60 @@ footer{
 
 				.column_right{
 			margin: 0 auto;
-			box-sizing: border-box;
 			width: 50%;
 			float:left;
 			a{
-				color: #0099cc;
+				color: #003366;
 				margin-bottom: 0;
-				width: 50%;
+				
 				font-weight: bold;
 				padding-bottom: 1em;
 				}
 	}
 
+
+
 	}
 
-	.soups{
-		clear: both;
+	.lunch{
+		margin: 0 auto;
+
+		h1{
+			text-align: center;
+		}
+		h2{
+			text-align: center;
+			margin: 0 auto;
+		}
+
+		.column_left{
+			margin: 0 auto;
+			width: 45%;
+			float:left;
+			margin-right: 5%;
+				
+				a{
+					color: #003366;
+					margin-bottom: 0;
+					width: 50%;
+					font-weight: bold;
+				}
+			}
+
+			.column_right{
+			margin: 0 auto;
+			width: 50%;
+			float:left;
+				a{
+					color: #003366;
+					margin-bottom: 0;
+					font-weight: bold;
+					padding-bottom: 1em;
+					}
+			}
 	}
+
+	
 
 	.tacos{
 	clear:both;
@@ -492,32 +562,34 @@ footer{
 		}
 	}
 }
-.caldos{
-	max-width: 100%;
-	margin: 0 auto;
-}
+		.caldos{
+			max-width: 100%;
+			margin: 0 auto;
+		}
+//-------------------------------HOME PAGE- BREAK POINT 1--------------------------//
+		.our_story_text{
+				width: 35%;
+				float:left;
+				padding-left: 2%;
+				box-sizing: border-box;
 
-.our_story_text{
-		width: 35%;
-		float:left;
-		padding-left: 2%;
-		box-sizing: border-box;
-
-	}
-	.amazing_texmex{
-		width: 50%;
-		float:right;
-	}
+			}
+			.amazing_texmex{
+				width: 50%;
+				float:right;
+			}
 
 .section_2{
 	clear: both;
 	border-box: 5px;
 	margin: 0 auto;
+	box-sizing: border-box;
 
 
 	.location{
 		float:left;
 		width: 35%;
+		padding-right: 5em;
 
 	}
 	.map{
@@ -563,24 +635,17 @@ footer{
 }
 
 
-
+//----------------------------BREAKPOINT 2-----------------------------------//
 
 @media (min-width: 1000px){
 
+	body{
+	width: 100%;
+	
+}
 
 	
-	header{
-		
-		margin: 0 auto;
-	}
-
-	.row{
-		max-width: 70%
-	}
-	footer{
-		
-		margin: 0 auto;
-	}
+	
 
 }
 
