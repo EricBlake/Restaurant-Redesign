@@ -1,7 +1,5 @@
 body {
-  background-image: url("https://github.com/EricBlake/Restaurant-Redesign/blob/master/Habanero-Website/background.jpg?raw=true");
-  background-size: cover;
-  background-repeat: no-repeat; }
+  background-color: #ffffff; }
 
 .site-header .main_title {
   background-color: #33cc99;
@@ -18,7 +16,9 @@ body {
 .navigation {
   background-color: #9933cc;
   margin: 0 auto;
-  padding: .1em; }
+  padding: .1em;
+  border-top: 3px solid #ff0000;
+  border-bottom: 3px solid #ff0000; }
   .navigation .nav_list ul {
     list-style: none;
     text-align: center; }
@@ -37,30 +37,25 @@ body {
 footer {
   background-color: #33cc99;
   clear: both;
-  overflow: hidden;
-  color: #ffffff;
-  margin-top: 2em; }
+  color: #9933cc;
+  margin-top: 2em;
+  border-top: 3px solid #ff0000; }
   footer .hours {
-    float: left;
     text-align: center;
-    padding-left: 5em;
     font-size: 1em; }
     footer .hours h1 {
       font-size: 1.6em;
-      color: #ffffff; }
+      color: #9933cc; }
 
 .location {
-  float: right;
-  padding-right: 5em;
+  text-align: center;
+  margin: 0 auto;
   font-size: 1em; }
   .location h1 {
-    font-size: 1.6em;
-    color: #ffffff; }
+    font-size: 1.6em; }
 
 .our_story {
-  margin: 0 auto; }
-  .our_story .our_story_text h1 {
-    color: #4D4D4D; }
+  margin: 1em; }
 
 .amazing_texmex {
   height: 10em;
@@ -76,6 +71,7 @@ footer {
   margin: 0 auto;
   overflow: hidden;
   padding-top: 2em;
+  background-color: #E3D7D7;
   border-color: #272822; }
   .section_2 .map {
     background-size: contain;
@@ -83,44 +79,48 @@ footer {
     .section_2 .map img {
       max-width: 100%; }
 
-.section_3 {
-  margin: 0 auto; }
-  .section_3 .catering_pic {
-    background-size: contain;
-    background-repeat: no-repeat; }
-    .section_3 .catering_pic img {
-      max-width: 100%; }
-  .section_3 .catering {
-    margin-left: 0 auto; }
+.catering_pic {
+  background-size: contain;
+  background-repeat: no-repeat; }
+  .catering_pic img {
+    max-width: 100%; }
+
+.catering {
+  margin-left: 1em; }
 
 .page_menu {
   text-align: center;
   font-size: 32px; }
 
-.breakfast .breakfast_label h1 {
-  text-align: center; }
-.breakfast .breakfast_label h2 {
-  text-align: center;
-  padding-bottom: 2em; }
+.breakfast {
+  background-color: #E3D7D7; }
+  .breakfast .breakfast_label h1 {
+    text-align: center; }
+  .breakfast .breakfast_label h2 {
+    text-align: center;
+    padding-bottom: 2em;
+    margin-top: -0.5em;
+    font-size: .8em; }
 
 .breakfast {
-  box-sizing: border-box;
   margin: 1em;
   overflow: hidden;
-  margin: 0 auto;
-  max-width: 1000px;
+  margin: 1em;
   border-box: 1em solid #272822; }
   .breakfast .section_titles1 {
-    text-align: center; }
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 2em; }
   .breakfast .menu_labels {
     font-size: 1.375em;
     font-family: 'Merriweather Sans', sans-serif; }
 
 .column_left {
   margin: 0 auto;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  padding-left: 1em; }
   .column_left a {
-    color: #990000;
+    color: #003366;
     margin-bottom: 0;
     font-weight: bold; }
 
@@ -128,7 +128,7 @@ footer {
   margin: 0 auto;
   box-sizing: border-box; }
   .column_right a {
-    color: #990000;
+    color: #003366;
     margin-bottom: 0;
     font-weight: bold;
     padding-bottom: 1em; }
@@ -145,7 +145,7 @@ footer {
   box-sizing: border-box;
   margin: 1em;
   max-width: 1000px;
-  margin: 0 auto;
+  margin: 1em;
   padding-top: 3em; }
   .lunch .row {
     overflow: hidden; }
@@ -153,7 +153,8 @@ footer {
       clear: both; }
     .lunch .row .section_titles1 {
       padding: 1em;
-      text-align: center; }
+      text-align: center;
+      margin: 0 auto; }
     .lunch .row .menu_labels {
       font-size: 1.375em;
       font-family: 'Merriweather Sans', sans-serif; }
@@ -161,13 +162,14 @@ footer {
       padding-top: 1em;
       text-align: left;
       overflow: hidden;
-      width: 30%; }
+      width: 30%;
+      padding-bottom: 1em; }
     .lunch .row .column_left {
       margin: 0 auto;
       box-sizing: border-box;
       float: left; }
       .lunch .row .column_left a {
-        color: #990000;
+        color: #003366;
         margin-bottom: 0;
         font-weight: bold; }
       .lunch .row .column_left p {
@@ -178,7 +180,7 @@ footer {
       box-sizing: border-box;
       float: left; }
       .lunch .row .column_right a {
-        color: #990000;
+        color: #003366;
         margin-bottom: 0;
         font-weight: bold; }
       .lunch .row .column_right p {
@@ -188,73 +190,116 @@ footer {
 .soups {
   margin: 0 auto; }
   .soups a {
-    color: #990000; }
+    color: #003366;
+    margin-bottom: 0;
+    font-weight: bold; }
   .soups p {
     margin-top: .5em;
-    padding-bottom: .5em; }
+    padding-bottom: .5em;
+    text-align: left;
+    max-width: 50%;
+    margin: 0 auto; }
+
+.dessert {
+  margin: 0 auto; }
+  .dessert a {
+    color: #003366;
+    margin-bottom: 0;
+    font-weight: bold; }
+  .dessert p {
+    margin-top: .5em;
+    padding-bottom: .5em;
+    max-width: 50%;
+    margin: 0 auto; }
 
 .caldos {
-  text-align: center; }
+  text-align: center;
+  max-width: 100%; }
   .caldos h1 {
-    text-align: center; }
+    text-align: center;
+    margin: 0 auto;
+    max-width: 100%; }
 
 @media (min-width: 550px) {
   .main_title {
     width: 100%;
     margin: 0 auto; }
 
+  .footer {
+    overflow: hidden; }
+    .footer .hours {
+      float: left;
+      text-align: center;
+      padding-left: 10em;
+      font-size: 1em; }
+      .footer .hours h1 {
+        font-size: 1.6em;
+        color: #ffffff; }
+    .footer .location {
+      float: right;
+      padding-right: 10em;
+      font-size: 1em;
+      margin: 0 auto; }
+      .footer .location h1 {
+        font-size: 1.6em; }
+
   .row {
     margin: 0 auto;
-    max-width: 999px; }
+    box-sizing: border-box; }
 
-  .breakfast .column_left {
-    margin: 0 auto;
-    box-sizing: border-box;
-    width: 45%;
-    float: left;
-    margin-right: 5%; }
-    .breakfast .column_left a {
-      color: #990000;
-      margin-bottom: 0;
+  .breakfast {
+    padding-bottom: 1em; }
+    .breakfast h1 {
+      text-align: center; }
+    .breakfast h2 {
+      text-align: center;
+      margin: 0 auto; }
+    .breakfast .column_left {
+      margin: 0 auto;
+      width: 45%;
+      float: left;
+      margin-right: 5%; }
+      .breakfast .column_left a {
+        color: #003366;
+        margin-bottom: 0;
+        width: 50%;
+        font-weight: bold; }
+    .breakfast .column_right {
+      margin: 0 auto;
       width: 50%;
-      font-weight: bold; }
-  .breakfast .column_right {
-    margin: 0 auto;
-    box-sizing: border-box;
-    width: 50%;
-    float: left; }
-    .breakfast .column_right a {
-      color: #990000;
-      margin-bottom: 0;
-      width: 50%;
-      font-weight: bold;
-      padding-bottom: 1em; }
+      float: left; }
+      .breakfast .column_right a {
+        color: #003366;
+        margin-bottom: 0;
+        font-weight: bold;
+        padding-bottom: 1em; }
 
-  .lunch .column_left {
-    margin: 0 auto;
-    box-sizing: border-box;
-    width: 45%;
-    float: left;
-    margin-right: 5%; }
-    .lunch .column_left a {
-      color: #990000;
-      margin-bottom: 0;
+  .lunch {
+    margin: 0 auto; }
+    .lunch h1 {
+      text-align: center; }
+    .lunch h2 {
+      text-align: center;
+      margin: 0 auto; }
+    .lunch .column_left {
+      margin: 0 auto;
       width: 50%;
-      font-weight: bold; }
-  .lunch .column_right {
-    margin: 0 auto;
-    box-sizing: border-box;
-    width: 50%;
-    float: left; }
-    .lunch .column_right a {
-      color: #990000;
-      margin-bottom: 0;
+      float: left;
+      margin-right: 5%; }
+      .lunch .column_left a {
+        color: #003366;
+        margin-bottom: 0;
+        width: 50%;
+        font-weight: bold; }
+    .lunch .column_right {
+      margin: 0 auto;
       width: 50%;
-      font-weight: bold;
-      padding-bottom: 1em; }
-
-  .soups {
-    clear: both; }
+      float: left; }
+      .lunch .column_right a {
+        color: #003366;
+        margin-bottom: 0;
+        font-weight: bold;
+        padding-bottom: 1em; }
 
   .tacos {
     clear: both;
@@ -284,10 +329,12 @@ footer {
   .section_2 {
     clear: both;
     border-box: 5px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    box-sizing: border-box; }
     .section_2 .location {
       float: left;
-      width: 35%; }
+      width: 35%;
+      padding-right: 5em; }
     .section_2 .map {
       float: left;
       width: 55%; }
@@ -311,13 +358,5 @@ footer {
       width: 35%;
       margin-left: 5%; } }
 @media (min-width: 1000px) {
-  header {
-    max-width: 90%;
-    margin: 0 auto; }
-
-  .row {
-    max-width: 70%; }
-
-  footer {
-    max-width: 90%;
-    margin: 0 auto; } }
+  body {
+    width: 100%; } }
