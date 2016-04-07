@@ -1,0 +1,668 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+$tot-width: 100%;
+$num-col: 12;
+$gut-width: 5%;
+
+$ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
+
+@mixin grid($bleezy){
+  width: ($bleezy * $ind-col-width) + ($gut-width * ($bleezy - 1));
+  float:left;
+  margin-right: $gut-width;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+body{
+	background-color: #ffffff;
+
+}
+
+//*header and navigation begin*//
+
+.site-header{
+
+	.main_title{
+	background-color: #33cc99;
+	text-align: center;
+	font-family: 'Ribeye', cursive;
+	color: #ffff66;
+	overflow: hidden;
+	font-size: 2.5em;
+	margin-bottom: 0em;
+	margin: 0 auto;
+
+	h2{
+		margin-top:0em;	
+	}
+
+}
+
+}
+
+.navigation{
+	background-color: #9933cc;
+	margin: 0 auto;
+	padding: .1em;
+	border-top: 3px solid #ff0000;
+	border-bottom: 3px solid #ff0000;
+
+	.nav_list{
+
+		ul{
+			list-style: none;
+			text-align: center;
+			
+
+			li{
+				display: inline-block;
+
+				.button:hover {color: #ffff66; }
+
+				.button{
+					text-decoration: none;
+					color: #ffffff;
+					padding: 2em;
+					font-size: 1.7em;
+					font-family: 'Merriweather Sans', sans-serif;
+					font-weight: 700;
+					
+			
+
+
+					
+				}
+
+			}
+		}
+	}
+}
+
+
+//*FOOTER BEGIN*//
+
+footer{
+	background-color: #33cc99;
+	clear: both;
+	color: #9933cc;
+	margin-top: 2em;
+	border-top: 3px solid #ff0000;
+	
+
+	
+	.hours{
+		
+		text-align:center;
+		font-size: 1em;
+
+		h1{
+		font-size: 1.6em;
+		color: #9933cc;
+		}
+
+		}
+}
+	.location{
+		text-align:center;
+		margin: 0 auto;
+		font-size: 1em;
+
+		h1{
+		font-size: 1.6em;
+		}
+	}
+
+
+//*FOOTER END*//
+
+//*HOME PAGE STYLING*//
+
+.our_story{
+	margin: 1em;
+	
+	
+	
+	
+	.our_story_text{
+
+		h1{
+			
+		}
+
+
+	}
+}
+	.amazing_texmex{
+		height: 10em;
+		background-image: url("http://cdn-image.foodandwine.com/sites/default/files/original-201305-HD-modern-mexican-restaurants-bandolero.jpg");
+		padding: 3em;
+		margin-top: 2em;
+		background-repeat: no-repeat;
+		background-size:cover;
+		color: #ffffff;
+
+}
+
+.section_2{
+	clear: both;
+	margin: 0 auto;
+	overflow: hidden;
+	padding-top: 2em;
+	background-color:#E3D7D7;
+	border-color: #272822;
+
+
+	.location{
+		
+	}
+
+	.map{
+		
+		background-size:contain;
+		background-repeat: no-repeat;
+
+		img{
+			max-width: 100%;
+		}
+
+
+		
+	}
+}
+
+	
+
+
+	.catering_pic{
+		
+		background-size:contain;
+		background-repeat: no-repeat;
+	
+
+		img{
+			max-width: 100%;
+		}
+	}
+
+	.catering{
+		margin-left: 1em;
+		}
+
+
+//**-----------------------HOMEPAGE STYLING END---------------------------------//
+
+
+
+//**-------------------------MENU CSS Styling-----------------------------------**//
+
+
+
+.page_menu{
+	text-align: center;
+	font-size: 32px;
+}
+
+.breakfast{
+	background-color:#E3D7D7;
+
+	.breakfast_label{
+
+		h1{
+			text-align: center;
+
+		}
+		h2{
+			text-align: center;
+			padding-bottom: 2em;
+			margin-top: -0.5em;
+			font-size: .8em;
+
+		}
+	}
+}
+
+.breakfast{
+	margin: 1em;
+	overflow: hidden;
+	margin: 1em;
+	border-box: 1em solid #272822;
+
+	.section_titles1{
+		text-align: center;
+		margin: 0 auto;
+		margin-bottom: 2em;
+	}
+
+	.menu_labels{
+			font-size: 1.375em;
+			font-family: 'Merriweather Sans', sans-serif;
+		}
+
+}
+
+.column_left{
+	margin: 0 auto;
+	box-sizing: border-box;
+	padding-left: 1em;
+	
+	a{
+		color: #003366;
+		margin-bottom: 0;
+		font-weight: bold;
+	}
+}
+.column_right{
+	margin: 0 auto;
+	box-sizing: border-box;
+	
+	a{
+		color: #003366;
+		margin-bottom: 0;
+		font-weight: bold;
+		padding-bottom: 1em;
+	}
+}
+
+//*BREAKFAST TACOS*//
+
+.tacos{
+	
+	text-align: center;
+	margin: 0 auto;
+	padding-top: 3em;
+
+	ul{
+		list-style: none;
+		text-align: center;
+
+		
+		}
+	}
+
+
+
+
+
+.lunch{
+	box-sizing: border-box;
+	margin: 1em;
+	max-width: 1000px;
+	margin: 1em;
+	padding-top: 3em;
+
+		.row{
+			overflow: hidden;
+		
+		.clear{
+			clear:both;
+		}
+	
+			.section_titles1{
+						padding: 1em;
+						text-align: center;
+						margin: 0 auto;
+					}
+
+				.menu_labels{
+					font-size: 1.375em;
+					font-family: 'Merriweather Sans', sans-serif;
+				}
+
+			.section_titles3{
+				padding-top: 1em;
+				text-align:left;
+				overflow: hidden;
+				width: 30%;
+				padding-bottom: 1em;
+
+				}
+	
+
+	//ENCHILALDAS STYLE//
+
+
+
+				.column_left{
+				margin: 0 auto;
+				box-sizing: border-box;
+				
+				float:left;
+				
+				
+					a{
+						color: #003366;
+						margin-bottom: 0;
+						
+						font-weight: bold;
+					}
+
+					p{
+						margin-top:.5em;
+						padding-bottom: .5em;
+
+					}
+			
+				
+				}
+	
+
+
+			.column_right{
+						margin: 0 auto;
+						box-sizing: border-box;
+						
+						float:left;
+						a{
+							color: #003366;
+							margin-bottom: 0;
+							
+							font-weight: bold;
+
+						}
+						p{
+						margin-top:.5em;
+						padding-bottom: .5em;
+
+					}
+
+				}
+	}
+}
+.soups{
+	
+	margin: 0 auto;
+	
+
+	a{
+	color: #003366;
+	margin-bottom: 0;
+	font-weight: bold;
+	}
+
+	p{
+	margin-top:.5em;
+	padding-bottom: .5em;
+	text-align: left;
+	max-width: 50%;
+	margin: 0 auto;
+
+	}		
+}
+
+.dessert{
+
+margin: 0 auto;
+	
+
+	a{
+	color: #003366;
+	margin-bottom: 0;
+	font-weight: bold;
+	}
+
+	p{
+	margin-top:.5em;
+	padding-bottom: .5em;
+	max-width: 50%;
+	margin: 0 auto;
+
+	}	
+
+
+}
+
+.caldos{
+	text-align: center;
+	
+	max-width: 100%;
+
+	h1{
+		text-align: center;
+		margin: 0 auto;
+		max-width: 100%;
+	}
+}
+
+
+//-------------------------------BREAKPOINT 1------------------------------------//
+
+@media (min-width: 550px){
+
+
+	
+  
+  .main_title{
+  	width: 100%;
+  	margin: 0 auto;
+
+  }
+	.footer{
+	overflow: hidden;
+
+				.hours{
+					float:left;
+					text-align:center;
+					padding-left: 10em;
+					font-size: 1em;
+
+					h1{
+					font-size: 1.6em;
+					color: #ffffff;
+					}
+
+					}
+
+				.location{
+					float:right;
+					padding-right: 10em;
+					font-size: 1em;
+					margin: 0 auto;
+
+					h1{
+					font-size: 1.6em;
+					}
+				}
+				}
+			
+	.row{
+		margin: 0 auto;
+		box-sizing: border-box;
+		
+	}
+
+	.breakfast{
+		padding-bottom: 1em;
+
+		h1{
+			text-align: center;
+		}
+		h2{
+			text-align: center;
+			margin: 0 auto;
+		}
+
+		.column_left{
+				margin: 0 auto;
+				width: 45%;
+				float:left;
+				margin-right: 5%;
+				
+				a{
+					color: #003366;
+					margin-bottom: 0;
+					width: 50%;
+					font-weight: bold;
+				}
+			}
+
+				.column_right{
+			margin: 0 auto;
+			width: 50%;
+			float:left;
+			a{
+				color: #003366;
+				margin-bottom: 0;
+				
+				font-weight: bold;
+				padding-bottom: 1em;
+				}
+	}
+
+
+
+	}
+
+	.lunch{
+		margin: 0 auto;
+
+		h1{
+			text-align: center;
+		}
+		h2{
+			text-align: center;
+			margin: 0 auto;
+		}
+
+		.column_left{
+			margin: 0 auto;
+			width: 45%;
+			float:left;
+			margin-right: 5%;
+				
+				a{
+					color: #003366;
+					margin-bottom: 0;
+					width: 50%;
+					font-weight: bold;
+				}
+			}
+
+			.column_right{
+			margin: 0 auto;
+			width: 50%;
+			float:left;
+				a{
+					color: #003366;
+					margin-bottom: 0;
+					font-weight: bold;
+					padding-bottom: 1em;
+					}
+			}
+	}
+
+	
+
+	.tacos{
+	clear:both;
+	text-align: center;
+	margin: 0 auto;
+	padding-top: 3em;
+
+	ul{
+		list-style: none;
+		text-align: center;
+
+		li{
+			display: inline-block;
+		}
+	}
+}
+		.caldos{
+			max-width: 100%;
+			margin: 0 auto;
+		}
+//-------------------------------HOME PAGE- BREAK POINT 1--------------------------//
+		.our_story_text{
+				width: 35%;
+				float:left;
+				padding-left: 2%;
+				box-sizing: border-box;
+
+			}
+			.amazing_texmex{
+				width: 50%;
+				float:right;
+			}
+
+.section_2{
+	clear: both;
+	border-box: 5px;
+	margin: 0 auto;
+	box-sizing: border-box;
+
+
+	.location{
+		float:left;
+		width: 35%;
+		padding-right: 5em;
+
+	}
+	.map{
+		
+		float:left;
+		width: 55%;
+	}
+
+}
+
+.section_3{
+	clear: both;
+	max-width: 999px;
+	margin:0 auto;
+	overflow: hidden;
+	padding-top: 3em;
+	box-sizing: border-box;
+
+		.catering_pic{
+				float:left;
+				background-size:contain;
+				background-repeat: no-repeat;
+				width:50%;
+
+				img{
+					max-width: 100%;
+				}
+			}
+
+			.catering{
+				float:right;
+				width: 35%;
+				margin-left: 5%;
+				}
+
+
+	}
+
+	
+
+
+
+}
+
+
+//----------------------------BREAKPOINT 2-----------------------------------//
+
+@media (min-width: 1000px){
+
+	body{
+	width: 100%;
+	
+}
+
+	
+	
+
+}
+
+
+
+
+
+
+
+
+
+
